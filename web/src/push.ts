@@ -4,7 +4,7 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { getFirestore, doc, setDoc } from 'firebase/firestore'
 import { firebaseConfig } from './firebaseConfig'
 
-const VAPID_PUBLIC_KEY = 'BANeEjGhJVXQWGpW447T2lEpUAm_Y4utHl3q4ct-nKJrtKuy__ioG1PS_Bsl9yyuEMWFwKJ3z3s4BlVVuIKxvuY	' // from Firebase Console > Cloud Messaging
+const VAPID_PUBLIC_KEY = 'BANeEjGhJVXQWGpW447T2lEpUAm_Y4utHl3q4ct-nKJrtKuy__ioG1PS_Bsl9yyuEMWFwKJ3z3s4BlVVuIKxvuY' // from Firebase Console > Cloud Messaging
 
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
