@@ -19,7 +19,7 @@ function startOfMinute(d) { const x = new Date(d); x.setSeconds(0,0); return x; 
 async function main() {
   // Window to tolerate GitHub Actions jitter (runs every ~5 min)
   const now = startOfMinute(new Date());
-  const windowMins = 7; // +/-7 minutes
+  const windowMins = 30; // +/-30 minutes
   const lower = new Date(now.getTime() - windowMins * 60000);
   const upper = new Date(now.getTime() + windowMins * 60000);
 
