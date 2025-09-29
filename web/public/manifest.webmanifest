@@ -1,0 +1,9 @@
+{
+  "name": "Taskbox",
+  "short_name": "Taskbox",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#0ea5e9",
+  "icons": []
+}
