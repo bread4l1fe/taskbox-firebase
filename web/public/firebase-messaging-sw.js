@@ -5,11 +5,12 @@ importScripts('https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js
 importScripts('https://www.gstatic.com/firebasejs/10.14.0/firebase-messaging-compat.js')
 
 firebase.initializeApp({
-  apiKey: "YOUR_KEY",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDaQbllxi5SiWD-brBP8jyfegoWfxC7lz8",
+  authDomain: "taskbox-matt.firebaseapp.com",
+  projectId: "taskbox-matt",
+  storageBucket: "taskbox-matt.firebasestorage.app",
+  messagingSenderId: "232444501415",
+  appId: "1:232444501415:web:ad1fd5c291033a82d6ea82"
 })
 
 const messaging = firebase.messaging()
