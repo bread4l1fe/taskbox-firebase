@@ -12,7 +12,7 @@ jobs:
       - name: Build web
         working-directory: web
         run: |
-          npm ci
+          npm install
           npm run build
 
       # Deploy Hosting using the official action
@@ -21,6 +21,6 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          projectId: YOUR_PROJECT_ID_HERE   # e.g., taskbox-matt
+          projectId: taskbox-matt   # e.g., taskbox-matt
           channelId: live                   # deploy straight to your live site
           entryPoint: .                     # firebase.json is at repo root
